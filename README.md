@@ -1,6 +1,6 @@
 # Under the Sky
 
-A personal photo journal built for IT-WEB 112 (Personal Website Creation project).
+A personal photo journal
 Night-sky, hiking, and canyon photography from the Pacific Northwest and the Southwest.
 
 ## Pages
@@ -27,12 +27,3 @@ under-the-sky/
 └── images/             (all original photos, organized by category)
 ```
 
-## Notes
-- All HTML and CSS validate with zero errors on the W3C validators.
-- All photographs are original work © Ibrahim Adil.
-- Fonts (Fraunces, Karla) are from Google Fonts under the SIL Open Font License.
-
-## Publishing
-To get a live link, push this folder to a GitHub repo and turn on
-GitHub Pages (Settings → Pages → deploy from the main branch). The site
-needs no build step — it's plain HTML/CSS/JS.
