@@ -1,0 +1,120 @@
+/* ============================================================
+   styleguide.css  —  styles used only on the Style Guide page
+   Under the Sky · Ibrahim Adil · IT-WEB 112
+   ============================================================ */
+
+.sg-block {
+  background-color: var(--midnight-blue);
+  border: 1px solid var(--slate-purple);
+  border-radius: 10px;
+  padding: 1.4rem 1.6rem;
+  margin: 0 0 1.5rem;
+}
+
+.sg-block h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  border-left: 4px solid var(--warm-gold);
+  padding-left: 0.7rem;
+}
+
+.sg-block h3 {
+  color: var(--warm-gold);
+  font-family: 'Karla', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin: 1.2rem 0 0.3rem;
+}
+
+/* definition-style plan table */
+.sg-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0;
+}
+
+.sg-table th,
+.sg-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--slate-purple);
+}
+
+.sg-table th {
+  color: var(--warm-gold);
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+  width: 170px;
+}
+
+/* color palette swatches */
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.swatch {
+  border: 1px solid var(--slate-purple);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.swatch-color {
+  height: 80px;
+}
+
+.swatch-info {
+  padding: 0.6rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.swatch-name {
+  font-family: 'Fraunces', serif;
+  color: var(--white-star);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.swatch-val {
+  color: var(--mist-gray);
+  font-family: 'Courier New', monospace;
+  display: block;
+  font-size: 0.78rem;
+}
+
+/* licensing table */
+.license-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.license-table th,
+.license-table td {
+  text-align: left;
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--slate-purple);
+}
+
+.license-table th {
+  color: var(--warm-gold);
+  font-family: 'Karla', sans-serif;
+}
+
+.sketch-figure img {
+  width: 100%;
+  border: 1px solid var(--slate-purple);
+  border-radius: 8px;
+}
+
+.sketch-figure figcaption {
+  margin-top: 0.6rem;
+  font-style: italic;
+  color: var(--slate-purple);
+  font-size: 0.9rem;
+}

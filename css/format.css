@@ -1,0 +1,256 @@
+/* ============================================================
+   format.css  —  Colors, Fonts & Typography
+   Under the Sky — a PNW + Southwest photo journal
+   Ibrahim Adil · IT-WEB 112
+   ============================================================ */
+
+/* --- Google Fonts: Fraunces (display) + Karla (body) --- */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Karla:wght@400;600;700&display=swap');
+
+/* --- Color palette (named so I can reuse the names) --------
+   Deep Navy    #0B1426   main background
+   Midnight Blue#1F2A44   cards / section backgrounds
+   Slate Purple #4A4E69   borders / secondary text
+   Mist Gray    #C9D1D9   body text
+   Warm Gold    #E8C547   links / accents / star ratings
+   ----------------------------------------------------------- */
+:root {
+  --deep-navy:     #0B1426;
+  --midnight-blue: #1F2A44;
+  --slate-purple:  #4A4E69;
+  --mist-gray:     #C9D1D9;
+  --warm-gold:     #E8C547;
+  --gold-soft:     #f0d98a;
+  --white-star:    #f7f9fc;
+}
+
+/* --- Base text + background --- */
+body {
+  background-color: var(--deep-navy);
+  color: var(--mist-gray);
+  font-family: 'Karla', 'Segoe UI', Tahoma, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+/* --- Headings use the display serif --- */
+h1, h2, h3 {
+  font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+  color: var(--white-star);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+/* --- Header / site identity --- */
+.site-header {
+  background-color: rgba(11, 20, 38, 0.85);
+  border-bottom: 1px solid var(--slate-purple);
+}
+
+.logo {
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--white-star);
+  text-decoration: none;
+}
+
+.logo .logo-dot {
+  color: var(--warm-gold);
+}
+
+.tagline {
+  color: var(--slate-purple);
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* --- Navigation links --- */
+.main-nav a {
+  color: var(--mist-gray);
+  text-decoration: none;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  color: var(--warm-gold);
+}
+
+.main-nav a.current {
+  color: var(--warm-gold);
+}
+
+/* --- Hero (home page banner) --- */
+.hero-title {
+  font-size: 3.2rem;
+  font-style: italic;
+  color: var(--white-star);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.7);
+}
+
+.hero-sub {
+  color: var(--mist-gray);
+  font-size: 1.15rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+.gold-rule {
+  border: none;
+  border-top: 2px solid var(--warm-gold);
+}
+
+/* --- Section headings --- */
+.section-title {
+  font-size: 2rem;
+  border-left: 4px solid var(--warm-gold);
+  padding-left: 0.75rem;
+}
+
+.eyebrow {
+  color: var(--warm-gold);
+  font-family: 'Karla', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* --- Intro / body copy --- */
+.lead {
+  font-size: 1.2rem;
+  color: var(--mist-gray);
+}
+
+a {
+  color: var(--warm-gold);
+}
+
+/* --- Category & photo cards --- */
+.card {
+  background-color: var(--midnight-blue);
+  border: 1px solid var(--slate-purple);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+}
+
+.card-meta {
+  color: var(--slate-purple);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* --- Gallery figure captions --- */
+.photo figcaption {
+  background-color: var(--midnight-blue);
+  border: 1px solid var(--slate-purple);
+  border-top: none;
+}
+
+.photo-name {
+  font-family: 'Fraunces', Georgia, serif;
+  color: var(--white-star);
+  font-size: 1.1rem;
+}
+
+.photo-loc {
+  color: var(--mist-gray);
+  font-size: 0.85rem;
+}
+
+/* --- Gold star rating chip --- */
+.stars-rating {
+  color: var(--warm-gold);
+  letter-spacing: 0.15em;
+  font-size: 0.95rem;
+}
+
+/* --- Lightbox caption --- */
+.lightbox-caption {
+  color: var(--mist-gray);
+  font-family: 'Karla', sans-serif;
+}
+
+.lightbox-caption strong {
+  font-family: 'Fraunces', serif;
+  color: var(--white-star);
+}
+
+.lightbox-close {
+  color: var(--warm-gold);
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: 'Karla', sans-serif;
+}
+
+/* --- About page lists --- */
+.gear-list li::marker {
+  color: var(--warm-gold);
+}
+
+/* --- Contact form --- */
+.field label {
+  color: var(--mist-gray);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.field input,
+.field textarea {
+  background-color: var(--midnight-blue);
+  border: 1px solid var(--slate-purple);
+  color: var(--white-star);
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: var(--slate-purple);
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--warm-gold);
+  outline: none;
+}
+
+.btn {
+  background-color: var(--warm-gold);
+  color: var(--deep-navy);
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+}
+
+.form-thanks {
+  color: var(--warm-gold);
+  border: 1px solid var(--warm-gold);
+  background-color: rgba(232, 197, 71, 0.08);
+}
+
+/* --- Footer --- */
+.site-footer {
+  border-top: 1px solid var(--slate-purple);
+  color: var(--slate-purple);
+  font-size: 0.85rem;
+}
+
+.site-footer a {
+  color: var(--mist-gray);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--warm-gold);
+}
