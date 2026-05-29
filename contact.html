@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ibrahim Adil">
+  <meta name="description" content="Suggest a dark-sky spot or trail for Under the Sky.">
+  <title>Contact — Under the Sky</title>
+  <link rel="stylesheet" href="css/format.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/effects.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <a href="index.html" class="logo">Under the Sky<span class="logo-dot">.</span></a>
+        <span class="tagline">Night skies &middot; trails &middot; canyons</span>
+      </div>
+      <nav class="main-nav" aria-label="Main menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stars.html">Stars</a></li>
+          <li><a href="hikes.html">Hikes</a></li>
+          <li><a href="canyons.html">Canyons</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="current">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap contact-layout">
+        <header class="section-head">
+          <p class="eyebrow">Contact</p>
+          <h1 class="section-title">Suggest a spot</h1>
+          <p class="lead">Know somewhere I should photograph &mdash; a dark-sky pullout, a
+            quiet trail, a canyon worth the drive? Send it my way and it goes on my list.</p>
+        </header>
+
+        <form class="form-grid" id="suggest-form">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Hiker" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="field">
+            <label for="location">Suggested location</label>
+            <input type="text" id="location" name="location" placeholder="e.g. Sun Top Lookout, WA" required>
+          </div>
+
+          <div class="field">
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" placeholder="Best time to go, how to get there, what makes it special..."></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send suggestion</button>
+        </form>
+
+        <p class="form-thanks" id="form-thanks" role="status" hidden></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; 2026 Ibrahim Adil &middot; Under the Sky</p>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stars.html">Stars</a></li>
+        <li><a href="hikes.html">Hikes</a></li>
+        <li><a href="canyons.html">Canyons</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
